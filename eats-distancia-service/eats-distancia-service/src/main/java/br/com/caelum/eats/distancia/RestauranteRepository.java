@@ -1,17 +1,13 @@
 package br.com.caelum.eats.distancia;
 
-import java.util.List;
-
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
-import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.mongodb.repository.MongoRepository;
 
-interface RestauranteRepository extends JpaRepository<Restaurante, Long> {
+interface RestauranteRepository extends MongoRepository<Restaurante, Long> {
 
-	List<Restaurante> findAllByAprovado(boolean aprovado);
+	Page<Restaurante> findAllByTipoDeCozinhaId(Long tipoId, Pageable limit);
 
-	Page<Restaurante> findAllByAprovadoAndTipoDeCozinhaId(boolean aprovado, Long tipoId, Pageable limit);
-
-	Page<Restaurante> findAllByAprovado(boolean aprovado, Pageable limit);
+	Page<Restaurante> findAll(Pageable limit);
 
 }
