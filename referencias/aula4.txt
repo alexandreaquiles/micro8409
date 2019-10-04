@@ -1,0 +1,10 @@
+https://martinfowler.com/articles/richardsonMaturityModel.html
+
+https://pt.slideshare.net/IgorAnishchenko/pb-vs-thrift-vs-avro
+
+https://grpc.io/docs/guides/concepts/
+https://grpc.io/docs/quickstart/
+https://github.com/saturnism/grpc-by-example-java/blob/master/springboot-example/grpc-echo-proto/src/main/proto/Echo.proto
+https://github.com/saturnism/grpc-by-example-java/blob/master/springboot-example/grpc-server/src/main/java/com/example/grpc/springboot/EchoServiceImpl.java
+https://github.com/saturnism/grpc-by-example-java/blob/master/springboot-example/grpc-client/src/main/java/com/example/grpc/springboot/Cmd.java
+https://blog.netsil.com/http-2-and-grpc-the-next-generation-of-microservices-interactions-aff4ffa6faed
