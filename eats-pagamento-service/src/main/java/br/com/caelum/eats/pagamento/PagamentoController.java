@@ -21,6 +21,7 @@ import lombok.AllArgsConstructor;
 class PagamentoController {
 
 	private PagamentoRepository pagamentoRepo;
+	private PedidoRestClient pedidoRestClient;
 
 	@GetMapping("/{id}")
 	PagamentoDto detalha(@PathVariable("id") Long id) {
@@ -42,7 +43,7 @@ class PagamentoController {
 		pagamento.setStatus(Pagamento.Status.CONFIRMADO);
 		pagamentoRepo.save(pagamento);
 		
-		//TODO: avisar para o monolito que o pedido foi pago
+		pedidoRestClient.avisaQueFoiPago(pagamento.getPedidoId());
 		
 		return new PagamentoDto(pagamento);
 	}
