@@ -14,7 +14,6 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import lombok.AllArgsConstructor;
-import lombok.SneakyThrows;
 
 @RestController
 @AllArgsConstructor
@@ -24,12 +23,8 @@ class RestauranteController {
 	private CardapioRepository cardapioRepo;
 	private DistanciaRestClient distanciaRestClient;
 
-	@SneakyThrows
 	@GetMapping("/restaurantes/{id}")
 	RestauranteDto detalha(@PathVariable("id") Long id) {
-		
-		Thread.sleep(20000);
-		
 		Restaurante restaurante = restauranteRepo.findById(id).orElseThrow(() -> new ResourceNotFoundException());
 		return new RestauranteDto(restaurante);
 	}
