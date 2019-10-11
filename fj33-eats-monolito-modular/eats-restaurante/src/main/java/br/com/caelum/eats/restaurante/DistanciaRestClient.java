@@ -12,7 +12,7 @@ import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
 @Service
-class DistanciaRestClient {
+public class DistanciaRestClient {
 	
 	private RestTemplate restTemplate;
 	private String distanciaServiceUrl;
