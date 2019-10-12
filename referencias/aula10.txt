@@ -8,4 +8,5 @@ https://landing.google.com/sre/workbook/chapters/how-sre-relates/
 https://microservices.io/patterns/observability/health-check-api.html
 https://docs.spring.io/spring-boot/docs/current/reference/html/production-ready-endpoints.html
 
+https://github.com/Netflix-Skunkworks/hystrix-dashboard
 
