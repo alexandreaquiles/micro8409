@@ -10,3 +10,13 @@ https://docs.spring.io/spring-boot/docs/current/reference/html/production-ready-
 
 https://github.com/Netflix-Skunkworks/hystrix-dashboard
 https://cloud.spring.io/spring-cloud-netflix/reference/html/#circuit-breaker-hystrix-dashboard
+
+https://microservices.io/patterns/observability/distributed-tracing.html
+https://zipkin.io/
+https://spring.io/projects/spring-cloud-sleuth
+
+https://www.appdynamics.com/
+https://www.dynatrace.com/
+https://www.datadoghq.com/
+
+https://codecentric.github.io/spring-boot-admin/current/
